@@ -70,4 +70,13 @@ const canDrive = (age) => age >= 18 ? 'You can drive' : 'You cannot drive'
 console.log(canDrive(17))
 console.log(canDrive(19))
 
+//Exercise 2 : Write an expresion to determine which is the greatest between 2 given numbers. If the first number is greatest return 'Num1 is the greatest' else return 'Num2 is the greatest'
+
+const num1 = 3
+const num2 = 0
+
+
+const greatest = num1 > num2 ? 'Num1 is the greatest' : 'Num2 is the greatest'
+
+console.log(greatest)
 
