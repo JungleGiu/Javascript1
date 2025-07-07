@@ -1,6 +1,9 @@
 'use strict';
+
 //1.1 - Arrow Functions
+
 // Level 1
+
 // Exercise 1 : Transform a normal add function that sums two numbers recibed through arguments, in an arrow function that sums two numbers received through parameters. 
 
 function add(a, b) {
@@ -57,3 +60,14 @@ const wait3Sec = () =>{
 }
 
 wait3Sec()
+
+// 1.2 - Ternary Operators
+
+// Exercise 1 : Create a function named canDrive that accepts an age parameter  and  thorugh a ternary operator checks if the person can drive and returns 'You can drive' if the person is 18 or older, and 'You cannot drive' if the person is under 18.
+
+const canDrive = (age) => age >= 18 ? 'You can drive' : 'You cannot drive'
+
+console.log(canDrive(17))
+console.log(canDrive(19))
+
+
