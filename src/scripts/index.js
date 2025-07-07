@@ -1,6 +1,6 @@
 'use strict';
 //1.1 - Arrow Functions
-
+// Level 1
 // Exercise 1 : Transform a normal add function that sums two numbers recibed through arguments, in an arrow function that sums two numbers received through parameters. 
 
 function add(a, b) {
@@ -31,4 +31,17 @@ class Person {
 const me = new Person('Giu')
 me.greet()
 
+//Level 2
 
+// Exercise 4 : Create a function named printNumbers that accepts an array of numbers and uses a loop to print in console each number with an arrow function
+
+const printNumbers = (array) => {
+    const print = num => console.log(num)
+
+    for (let i = 0; i < array.length; i++){
+        print(array[i])
+    } 
+}
+const arr = [1, 4, 7, 9, 5];
+
+printNumbers(arr)
