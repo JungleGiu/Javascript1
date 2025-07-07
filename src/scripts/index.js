@@ -1,6 +1,7 @@
 'use strict';
 //1.1 - Arrow Functions
-// Exercise 1 : Function conversion. From a normal add function that sums two numbers recibed through arguments, to an arrow function that sums two numbers received through parameters. 
+
+// Exercise 1 : Transform a normal add function that sums two numbers recibed through arguments, in an arrow function that sums two numbers received through parameters. 
 
 function add(a, b) {
     return a + b;
@@ -16,4 +17,18 @@ console.log(addArrow(1, 2));
 const randomNum = () =>  Math.floor(Math.random()*101)
 
 console.log(randomNum())
+
+// Exercise 3 : Create a class Person with a name property and a greet method expressed with an arrow function that utilizes 'this' this keyword to refer to name property of an instance
+
+class Person {
+    constructor(name){
+    this.name= name
+}
+ greet = () => console.log(`Hello ${this.name}`)
+
+}
+
+const me = new Person('Giu')
+me.greet()
+
 
