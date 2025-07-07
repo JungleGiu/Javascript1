@@ -45,3 +45,15 @@ const printNumbers = (array) => {
 const arr = [1, 4, 7, 9, 5];
 
 printNumbers(arr)
+
+//Level 3
+
+// Exercise 5 : Create an arrow function that prints a message with a 3 seconds delay using setTimeout
+
+const wait3Sec = () =>{
+    setTimeout(() => {
+ console.log('Three seconds later')
+    }, '3000')
+}
+
+wait3Sec()
