@@ -157,7 +157,7 @@ const waitForGreet = (name, funct) => {
 
 waitForGreet("Giu", greet);
 
-//Exercise 4 : Write a function processElements that accepts 2 parameters, an array and a callback function. 'processElements' function must call the callback function for each element of the array.
+//Exercise 4 : Write a function 'processElements' that accepts 2 parameters, an array and a callback function. 'processElements' function must call the callback function for each element of the array.
 
 const callback2 = (e) => e + 1;
 const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -171,3 +171,16 @@ const processElements = (array, funct) => {
 };
 
 console.log(processElements(arr2, callback2));
+
+//Level 3
+
+// Exercise 5 : Write a function 'processString' that accepts 2 parameters, a string and a callabck function. 'processString' must transform all characters of the strig to uppercase and call the callback function with the transformed string as parameter
+
+const call = (str) => console.log(`${str}`)
+const string = 'hello world'
+const processString = (str , funct) => {
+let transform = str.toUpperCase()
+funct(transform)
+}
+
+processString(string,call)
