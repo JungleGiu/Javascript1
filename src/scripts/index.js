@@ -215,3 +215,11 @@ object2.size = 5
 
 console.log(object1, object2)
 
+// Exercise 4 : Create an array with different elements. Destructure with rest operator to assign the first 2 elements to 2 variables  and assign the rest of the values to a third variable.
+
+
+const [a,b,...c] = [1,2,3,4,5]
+
+console.log(`first  ${a} second ${b} and rest  ${c}`) 
+
+
