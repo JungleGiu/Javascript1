@@ -243,4 +243,13 @@ const obj1 = {
     const obj3 = {...obj1, ...obj2}
     console.log(obj3)
 
-    
+
+// 1.5 Array Transformation
+
+//Level 1
+
+// Exercise 1 : Create an array with  1, 2 ,3 ,4 numbers. Use map method to create a new array with the squares of the original array.
+
+const arr5 = [1,2,3,4]
+console.log(arr5.map(e => e*e) , arr5)
+
