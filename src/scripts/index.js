@@ -132,5 +132,11 @@ const process = (num, funct) => funct(num)
 
 console.log(process(6,callback))
 
+// Exercise 2 : write a function 'calurator' that accepts 3 parameters, 2 numbers and a callback function. 'calculator' function must call callback function with the 2 numbers as parameters. Then call the 'calculator' with a function that sums the two numbers as parameter.
 
+const sum = (num1, num2) => num1 + num2
+
+const calculator = (num1, num2, funct) => funct (num1,num2)
+
+console.log(calculator(4,5,sum))
 
