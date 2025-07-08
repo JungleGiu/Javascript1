@@ -248,13 +248,13 @@ const obj1 = {
 
 //Level 1
 
-// Exercise 1 : Create an array with  1, 2 ,3 ,4 numbers. Use map method to create a new array with the squares of the original array.
+// Exercise 1 : Create an array with  1,2,3 and 4 numbers. Use map method to create a new array with the squares of the original array.
 
 const arr5 = [1,2,3,4]
 const arr6 = arr.map((n)=> n*n)
 console.log(arr6)
 
-// Exercise 2 : Create an array with  1, 2 ,3 ,4 numbers. Use filter method to create a new array with only even numbers.
+// Exercise 2 : Create an array with  1,2,3 and 4 numbers. Use filter method to create a new array with only even numbers.
 
 const arr7 = arr5.filter((n) => n%2 ==0)
 console.log(arr7)
@@ -263,3 +263,8 @@ console.log(arr7)
 
 const arr8 = [1,10,8,11]
 console.log(arr8.find((n)=> n > 10))
+
+// Exercise 4 : Create an array with  13,7,8 and 21 numbers. Use raduce method to calculate the sum of all the numbers
+
+const arr9= [13,7,8,21]
+console.log(arr9.reduce((acc, n)=> acc + n, 0 ))
