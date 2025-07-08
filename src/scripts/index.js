@@ -222,4 +222,11 @@ const [a,b,...c] = [1,2,3,4,5]
 
 console.log(`first  ${a} second ${b} and rest  ${c}`) 
 
+// Level 3
+
+// Exercise 5 : Create a function that accepts 3 arguments, then create an array qith 3 elements and call the function with the elements of the array as arguments using the spread operator.
+
+const func = (a,b,c) => console.log(a,b,c)
+const arr4 = [1,2,3]
+func(...arr4)
 
