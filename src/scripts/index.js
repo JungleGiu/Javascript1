@@ -84,7 +84,8 @@ console.log(greatest);
 //  Then create a function that accepts 3 parameters (numbers a,b,c) and uses a ternary operator to determine witch one is the gratest
 
 let number = 8;
- let result = number == 0
+let result =
+  number == 0
     ? "Number is 0"
     : number > 0
     ? "Number is positive"
@@ -92,33 +93,34 @@ let number = 8;
 
 console.log(result);
 
-const greatestNum = (a,b,c) =>{
-let gratest = a>b && a>c 
-? 'a is the greatest' 
-: b>a && b>c 
-? 'b is the gratest' 
-: 'c is the gratest'
-return gratest
-}
+const greatestNum = (a, b, c) => {
+  let gratest =
+    a > b && a > c
+      ? "a is the greatest"
+      : b > a && b > c
+      ? "b is the gratest"
+      : "c is the gratest";
+  return gratest;
+};
 
-console.log(greatestNum(6,9,1))
+console.log(greatestNum(6, 9, 1));
 
-//Level 3 
+//Level 3
 
 //Exercise 4 : Write a function that accpts an array of numbers and determines for each number if it's even or odd through a loop and a ternary operator
 
 const evenOrOdd = (arr) => {
-  let evens = []
-  let odds = []
-  for (let i = 0 ; i < arr.length ; i++ ){
-    arr[i]%2 == 0 ? evens.push(arr[i]): odds.push(arr[i])
+  let evens = [];
+  let odds = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] % 2 == 0 ? evens.push(arr[i]) : odds.push(arr[i]);
   }
-  return `Even numbers are ${evens}, and odds numbers are ${odds}`
-}
+  return `Even numbers are ${evens}, and odds numbers are ${odds}`;
+};
 
-const array = [2,5,6,7,8,3,1]
+const array = [2, 5, 6, 7, 8, 3, 1];
 
-console.log(evenOrOdd(array))
+console.log(evenOrOdd(array));
 
 // 1.3 Callbacks
 
@@ -126,31 +128,46 @@ console.log(evenOrOdd(array))
 
 // Exercise 1 : Write a function called 'process' that accepts 2 parameters, first is a number, the second a callback function. 'process' function must call callback function and pass it the number as parameter.
 
-const callback =(num) => num * 2
+const callback = (num) => num * 2;
 
-const process = (num, funct) => funct(num)
+const process = (num, funct) => funct(num);
 
-console.log(process(6,callback))
+console.log(process(6, callback));
 
 // Exercise 2 : write a function 'calurator' that accepts 3 parameters, 2 numbers and a callback function. 'calculator' function must call callback function with the 2 numbers as parameters. Then call the 'calculator' with a function that sums the two numbers as parameter.
 
-const sum = (num1, num2) => num1 + num2
+const sum = (num1, num2) => num1 + num2;
 
-const calculator = (num1, num2, funct) => funct (num1,num2)
+const calculator = (num1, num2, funct) => funct(num1, num2);
 
-console.log(calculator(4,5,sum))
+console.log(calculator(4, 5, sum));
 
 // Level 2
 
 // Exercise 3 : Write a function 'waitForGreet' that accepts 2 parameters, a name and a callback function.'waitForGreet' function must delay 2 seconds the call to callback and pass the name as parameter.
 
 const greet = (name) => {
-  console.log(`Hello ${name}!`)
-}
+  console.log(`Hello ${name}!`);
+};
 const waitForGreet = (name, funct) => {
-  setTimeout(() =>{
-    funct(name)
-  }, '2000')
-}
+  setTimeout(() => {
+    funct(name);
+  }, "2000");
+};
 
-waitForGreet('Giu', greet)
+waitForGreet("Giu", greet);
+
+//Exercise 4 : Write a function processElements that accepts 2 parameters, an array and a callback function. 'processElements' function must call the callback function for each element of the array.
+
+const callback2 = (e) => e + 1;
+const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const processElements = (array, funct) => {
+  let newarr = [];
+  for (let i = 0; i < array.length; i++) {
+    newarr.push(funct(array[i]));
+  }
+  return newarr;
+};
+
+console.log(processElements(arr2, callback2));
