@@ -268,3 +268,12 @@ console.log(arr8.find((n)=> n > 10))
 
 const arr9= [13,7,8,21]
 console.log(arr9.reduce((acc, n)=> acc + n, 0 ))
+
+// Level 2
+
+// Exercise 5 : Given an array  "[ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ]", create a single line function that : filters numbers bigger than 10, multiplies each filtered number for 2, calculates the sum beetween all filtered and multiplied numbers an returns the sum.
+
+const arr10 = [ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ]
+
+const oneLineTransform = arr => arr.filter((n) => n>10).map((n)=> n *2).reduce((acc,n) => acc + n, 0)
+console.log(oneLineTransform(arr10))
