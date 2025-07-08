@@ -258,3 +258,8 @@ console.log(arr6)
 
 const arr7 = arr5.filter((n) => n%2 ==0)
 console.log(arr7)
+
+// Exercise 3 : Create an array with 1,10,8 and 11 numbers. Use find method to find the first number bigger than 10
+
+const arr8 = [1,10,8,11]
+console.log(arr8.find((n)=> n > 10))
