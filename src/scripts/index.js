@@ -201,4 +201,17 @@ console.log(arr3)
 const sumAll = (...num) => num.reduce((acc,n)=> acc + n, 0)
 console.log(sumAll(1,4,6,9,8))
 
+// Level 2 
+
+// Exercise 3 : Create an object 'object1', then create a second object 'object2' as a copy of 'object1' and change 1 property of 'object2'. Observe how 'object1' remains unchanged.
+
+const object1 = {
+name : 'ball',
+size : 3
+}
+
+const object2 = {...object1}
+object2.size = 5
+
+console.log(object1, object2)
 
