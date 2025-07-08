@@ -230,3 +230,17 @@ const func = (a,b,c) => console.log(a,b,c)
 const arr4 = [1,2,3]
 func(...arr4)
 
+// Exercise 6 : Create two objects with different properties then use spread operator to merge them in a third object.
+
+const obj1 = {
+    name : 'ball',
+    size : 3
+    }
+    const obj2 = {
+        color : 'red',
+        shape : 'sphere'
+    }
+    const obj3 = {...obj1, ...obj2}
+    console.log(obj3)
+
+    
