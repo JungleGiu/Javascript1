@@ -251,5 +251,10 @@ const obj1 = {
 // Exercise 1 : Create an array with  1, 2 ,3 ,4 numbers. Use map method to create a new array with the squares of the original array.
 
 const arr5 = [1,2,3,4]
-console.log(arr5.map(e => e*e) , arr5)
+const arr6 = arr.map((n)=> n*n)
+console.log(arr6)
 
+// Exercise 2 : Create an array with  1, 2 ,3 ,4 numbers. Use filter method to create a new array with only even numbers.
+
+const arr7 = arr5.filter((n) => n%2 ==0)
+console.log(arr7)
