@@ -119,3 +119,18 @@ const evenOrOdd = (arr) => {
 const array = [2,5,6,7,8,3,1]
 
 console.log(evenOrOdd(array))
+
+// 1.3 Callbacks
+
+//Level 1
+
+// Exercise 1 : Write a function called 'process' that accepts 2 parameters, first is a number, the second a callback function. 'process' function must call callback function and pass it the number as parameter.
+
+const callback =(num) => num * 2
+
+const process = (num, funct) => funct(num)
+
+console.log(process(6,callback))
+
+
+
