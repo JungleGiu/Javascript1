@@ -140,3 +140,17 @@ const calculator = (num1, num2, funct) => funct (num1,num2)
 
 console.log(calculator(4,5,sum))
 
+// Level 2
+
+// Exercise 3 : Write a function 'waitForGreet' that accepts 2 parameters, a name and a callback function.'waitForGreet' function must delay 2 seconds the call to callback and pass the name as parameter.
+
+const greet = (name) => {
+  console.log(`Hello ${name}!`)
+}
+const waitForGreet = (name, funct) => {
+  setTimeout(() =>{
+    funct(name)
+  }, '2000')
+}
+
+waitForGreet('Giu', greet)
