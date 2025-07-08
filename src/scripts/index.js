@@ -102,3 +102,20 @@ return gratest
 }
 
 console.log(greatestNum(6,9,1))
+
+//Level 3 
+
+//Exercise 4 : Write a function that accpts an array of numbers and determines for each number if it's even or odd through a loop and a ternary operator
+
+const evenOrOdd = (arr) => {
+  let evens = []
+  let odds = []
+  for (let i = 0 ; i < arr.length ; i++ ){
+    arr[i]%2 == 0 ? evens.push(arr[i]): odds.push(arr[i])
+  }
+  return `Even numbers are ${evens}, and odds numbers are ${odds}`
+}
+
+const array = [2,5,6,7,8,3,1]
+
+console.log(evenOrOdd(array))
