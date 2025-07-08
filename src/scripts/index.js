@@ -196,3 +196,9 @@ const arr2 = [5,7,8]
 const arr3 = [...arr1, ...arr2]
 console.log(arr3)
 
+// Exercise 2 : Create a function 'sum' that uses rest operator to accept an undefined number of parameters and return their total.
+
+const sumAll = (...num) => num.reduce((acc,n)=> acc + n, 0)
+console.log(sumAll(1,4,6,9,8))
+
+
