@@ -160,7 +160,7 @@ waitForGreet("Giu", greet);
 //Exercise 4 : Write a function 'processElements' that accepts 2 parameters, an array and a callback function. 'processElements' function must call the callback function for each element of the array.
 
 const callback2 = (e) => e + 1;
-const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+const array1 = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const processElements = (array, funct) => {
   let newarr = [];
@@ -170,7 +170,7 @@ const processElements = (array, funct) => {
   return newarr;
 };
 
-console.log(processElements(arr2, callback2));
+console.log(processElements(array1, callback2));
 
 //Level 3
 
@@ -184,3 +184,15 @@ funct(transform)
 }
 
 processString(string,call)
+
+// 1.4 Rest and Spread operators
+
+// Level 1
+
+// Exercise 1 : Create 2 arrays then use spread operator to join them in a third array that contains all element from array1 and 2.
+
+const arr1 = [1,3,4]
+const arr2 = [5,7,8]
+const arr3 = [...arr1, ...arr2]
+console.log(arr3)
+
