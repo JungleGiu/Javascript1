@@ -311,5 +311,12 @@ let newarr = numbers.filter((n) => n % 2 == 0)
 
 console.log(newarr)
 
+// Level 2
 
+// Exercise 4 : Given an object { name: 'Ona', age: 25, city: 'Barcelona' } with key value pairs use for-in loop to print each object property and it's value in the console.
 
+let obj = { name: 'Ona', age: 25, city: 'Barcelona' };
+
+for (let key in obj) {
+  console.log(`${key}: ${obj[key]}`); 
+}
