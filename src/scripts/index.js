@@ -303,3 +303,13 @@ for (let name of names) {
   console.log(name);
 }
 
+// Exercise 3 : Given an array of numbers [1, 2, 3, 4, 5, 6] use filter method to create a new array with only even numbers.
+
+let numbers = [1, 2, 3, 4, 5, 6];
+
+let newarr = numbers.filter((n) => n % 2 == 0)
+
+console.log(newarr)
+
+
+
