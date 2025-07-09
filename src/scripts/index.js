@@ -394,3 +394,21 @@ const awaitPromise2 = async () =>{
   }
 }
 awaitPromise2()
+
+// Level 3
+
+// Exercise 6 : create 2 promises that resolve in 2 and 3 seconds respectively then use Promise.all to wait for both promises to resolve and then print their results in the console.
+
+const firstPromise = new Promise ((res ) =>{
+setTimeout(()=>{
+res('first')
+}, 2000)
+})
+
+const secondPromise = new Promise((res) => {
+  setTimeout(()=>{
+    res('second')
+  }, 3000)
+})
+
+Promise.all([firstPromise, secondPromise]).then(res => console.log(res))
