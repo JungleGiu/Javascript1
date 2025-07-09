@@ -286,3 +286,14 @@ const arr11 = [ 11, 12, 13, 14 ]
 console.log(arr11.every((n) => n>10)) // all numbers are bigger than 10
 console.log(arr11.some((n) => n>10))
 
+// 1.6 Array loops
+
+// Level 1
+
+// Exercise 1 : Given an array of names use forEach method to print each name in the console.
+
+let names = ['Anna', 'Bernat', 'Clara'];
+
+names.forEach((name) => console.log(name));
+
+
