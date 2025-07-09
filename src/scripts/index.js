@@ -337,3 +337,13 @@ for (let num of numbers) {
 for ( let name of names) {
   console.log(name, names.indexOf(name) )
 }
+
+// 1.7 Promises and Async/Await
+
+// Exercise 1 : Create a promise that resolves in 2 seconds and returns the string 'Hello, world'.
+
+ new Promise((resolve) => {
+  setTimeout(()=>{
+    resolve(console.log('Hello, world'))
+  }, 2000);
+});
