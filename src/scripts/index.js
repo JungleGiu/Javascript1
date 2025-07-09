@@ -292,7 +292,7 @@ console.log(arr11.some((n) => n>10))
 
 // Exercise 1 : Given an array of names use forEach method to print each name in the console.
 
-let names = ['Anna', 'Bernat', 'Clara'];
+const names = ['Anna', 'Bernat', 'Clara'];
 
 names.forEach((name) => console.log(name));
 
@@ -328,4 +328,12 @@ for (let num of numbers) {
     break;
   }
   console.log(num);
+}
+
+// Level 3
+
+// Exercise 6 : Given an array of names use for-of loop to print each name and it's index in the console.
+
+for ( let name of names) {
+  console.log(name, names.indexOf(name) )
 }
