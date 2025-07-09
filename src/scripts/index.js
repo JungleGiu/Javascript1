@@ -357,3 +357,16 @@ promise.then((res) =>{
 })
 
 
+// Exercise 3 : Create a promise that resolves in 2 seconds if the input is 'Hello' and rejects if is any other.
+
+const input = 'Hello'
+
+let promise2 =  new Promise ((resolve, reject) => {
+  setTimeout(()=>{
+    input == 'Hello' 
+    ? resolve('resolved') 
+    : reject('reject')
+  }, 2000)
+})
+
+promise2.then(console.log).catch(console.error)
