@@ -305,7 +305,7 @@ for (let name of names) {
 
 // Exercise 3 : Given an array of numbers [1, 2, 3, 4, 5, 6] use filter method to create a new array with only even numbers.
 
-let numbers = [1, 2, 3, 4, 5, 6];
+const numbers = [1, 2, 3, 4, 5, 6];
 
 let newarr = numbers.filter((n) => n % 2 == 0)
 
@@ -319,4 +319,13 @@ let obj = { name: 'Ona', age: 25, city: 'Barcelona' };
 
 for (let key in obj) {
   console.log(`${key}: ${obj[key]}`); 
+}
+
+// Exercise 5 : Given an array of numbers use for-of loop to print each number in the console till number five, use break statement to stop the loop.
+
+for (let num of numbers) {
+  if (num > 5) {
+    break;
+  }
+  console.log(num);
 }
