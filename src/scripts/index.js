@@ -248,32 +248,41 @@ const obj1 = {
 
 //Level 1
 
-// Exercise 1 : Create an array with  1,2,3 and 4 numbers. Use map method to create a new array with the squares of the original array.
+// Exercise 1 : Given an array  [ 1, 2, 3, 4 ] use map method to create a new array with the squares of the original array.
 
 const arr5 = [1,2,3,4]
 const arr6 = arr.map((n)=> n*n)
 console.log(arr6)
 
-// Exercise 2 : Create an array with  1,2,3 and 4 numbers. Use filter method to create a new array with only even numbers.
+// Exercise 2 : Given an array  [ 1, 2, 3, 4 ] use filter method to create a new array with only even numbers.
 
 const arr7 = arr5.filter((n) => n%2 ==0)
 console.log(arr7)
 
-// Exercise 3 : Create an array with 1,10,8 and 11 numbers. Use find method to find the first number bigger than 10
+// Exercise 3 : Given an array [ 1, 10, 8, 11 ]  use the find method to find the first number bigger than 10
 
 const arr8 = [1,10,8,11]
 console.log(arr8.find((n)=> n > 10))
 
-// Exercise 4 : Create an array with  13,7,8 and 21 numbers. Use raduce method to calculate the sum of all the numbers
+// Exercise 4 : Given an array  [ 13, 7, 8, 21 ] use reduce method to calculate the sum of all the numbers
 
 const arr9= [13,7,8,21]
 console.log(arr9.reduce((acc, n)=> acc + n, 0 ))
 
 // Level 2
 
-// Exercise 5 : Given an array  "[ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ]", create a single line function that : filters numbers bigger than 10, multiplies each filtered number for 2, calculates the sum beetween all filtered and multiplied numbers an returns the sum.
+// Exercise 5 : Given an array  [ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ] create a single line function that : filters numbers bigger than 10, multiplies each filtered number for 2, calculates the sum beetween all filtered and multiplied numbers an returns the sum.
 
 const arr10 = [ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ]
 
 const oneLineTransform = arr => arr.filter((n) => n>10).map((n)=> n *2).reduce((acc,n) => acc + n, 0)
 console.log(oneLineTransform(arr10))
+
+// Level 3
+
+/// Exercise 6 : Given an array [ 11, 12, 13, 14 ] use every and some methods to check if all or just some numbers are bigger than 10
+
+const arr11 = [ 11, 12, 13, 14 ]
+console.log(arr11.every((n) => n>10)) // all numbers are bigger than 10
+console.log(arr11.some((n) => n>10))
+

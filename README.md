@@ -19,4 +19,4 @@ Since the project propose is to train my skills with pure Javascript, I'll only 
 - basic CSS
 
 ## Install
-To access this project you can clone this repository and simply open it into your browser, then open DevTools Inspect tab to se the source code and the outputs of the `console.log` I'll be writing to display results of some exercises.
+To access this project you can clone this repository and simply open it into your browser, then open DevTools Inspect tab to se the source code and the outputs of the `console.log` I'll be writing to display the results of exercises.
