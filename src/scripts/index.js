@@ -379,3 +379,18 @@ const awaitPromise = async() =>{
 }
 
 awaitPromise()
+
+// Level 2 
+
+// Exercise 5 : Edit the asynchronous function un the former exercise using a try catch block to manage errors
+
+const awaitPromise2 = async () =>{
+  try {
+    let res = await promise
+ console.log(res)
+  }
+  catch(error){
+ console.error(error)
+  }
+}
+awaitPromise2()
