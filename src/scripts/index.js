@@ -370,3 +370,12 @@ let promise2 =  new Promise ((resolve, reject) => {
 })
 
 promise2.then(console.log).catch(console.error)
+
+//Exercise 4 : Write an asynchronous function that uses await function to wait the result from promis ein exercise 1 and prints it to the console.
+
+const awaitPromise = async() =>{
+ let res = await promise
+  console.log(res)
+}
+
+awaitPromise()
