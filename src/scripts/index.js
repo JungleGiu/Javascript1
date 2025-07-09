@@ -340,10 +340,20 @@ for ( let name of names) {
 
 // 1.7 Promises and Async/Await
 
+//Level 1
+
 // Exercise 1 : Create a promise that resolves in 2 seconds and returns the string 'Hello, world'.
 
- new Promise((resolve) => {
+ let promise = new Promise((resolve) => {
   setTimeout(()=>{
-    resolve(console.log('Hello, world'))
+    resolve('Hello, world')
   }, 2000);
 });
+
+// Exercise 2 : Using the promise from former exercise, create a .then that prints the result in the console.
+
+promise.then((res) =>{
+  console.log(res)
+})
+
+
