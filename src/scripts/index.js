@@ -297,3 +297,9 @@ let names = ['Anna', 'Bernat', 'Clara'];
 names.forEach((name) => console.log(name));
 
 
+// Exercise 2 : Given an array of names use a for-of loop to print each name in the console.
+
+for (let name of names) {
+  console.log(name);
+}
+
