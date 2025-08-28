@@ -1,4 +1,6 @@
-# Javascript 1 - basic Javascript exercises proposed in IT ACADEMY  Front-end itinerary
+# 🌐Javascript 1 - basic Javascript exercises proposed in IT ACADEMY  Front-end itinerary
+
+## 📓 Introduction
 This project is about basic **Javascript** exercises proposed in IT ACADEMY  Front-end itinerary.
 Exercises are organized by topic, each topic has exercises for three levels of difficulty.
  The topics follow this order:
@@ -11,7 +13,7 @@ Exercises are organized by topic, each topic has exercises for three levels of d
 6. Array Loops
 7. Promises and Async-Await
 
-## Goals
+## ✅ Goals
 - Understand the concepts of pure Javascript
 - Use good coding practices
 - Write clean and readable code
@@ -60,4 +62,4 @@ Since the project objective is to train my skills with pure Javascript, I'll onl
 - [X] Make the code more readable and maintainable.
 
 ## 📝 Notes
-I tried to mantain the code as simple and readable as possible, I avoided using 'spanglish' in every part of the code. As for the returns,from the moment we practice arrow functions from the first exercise,of course we can use the return keyword, but since I know that the return keyword is not necessary in short notation as long as we stay in a single lin (I also avoid parentheses when the arrow function has only one parameter), I decided to use the return keyword only when we have functions with multiple lines of code. Comments in my code are only functional to reference to the structure of the exercises and not to explain the code, as the console.log is used to display the results of the exercises, not for debugging purposes.
+I tried to mantain the code as simple and readable as possible, I avoided using 'spanglish' in every part of the code. As for the returns,from the moment we practice arrow functions from the first exercise,of course we can use the return keyword, but since I know that the return keyword is not necessary in short notation as long as we stay in a single line (I also avoid parentheses when the arrow function has only one parameter), I decided to use the return keyword only when we have functions with multiple lines of code. Comments in my code are only functional to reference to the structure of the exercises and not to explain the code, as the console.log is used to display the results of the exercises, not for debugging purposes.
